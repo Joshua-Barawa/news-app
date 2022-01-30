@@ -32,28 +32,45 @@ color:#fff;
    list-style-type:none;
 }
 
-
-
-
-
-
-.card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 20px;
-    background-color:red;
+.hero{
+display: flex;
+padding:0px 5%;
+background-color:red;
 }
 
-.card{
- background-color: red;
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+    margin:10px;
+    flex:0.9;
+
 }
 
 .card-body{
-      width: 500px;
-      height: 400px;
-      margin: 10px;
-      border-radius: 5px;
-      box-shadow: 0px 0px 5px grey;
       background-size: cover;
-      background-color: red;
+      height:320px;
+      text-align:bottom;
+      align-items:bottom;
+      border-radius:5px;
   }
+
+ .card-title{
+ color:#fff;
+ font-weight:bold;
+ }
+
+ .card-text{
+ color:#fff;
+ }
+
+
+ .row{
+ position:sticky;
+ top:10px;
+ }
+
+ .list-group{
+ width:250px;
+ margin:10px;
+ }
