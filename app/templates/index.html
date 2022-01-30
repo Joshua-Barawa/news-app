@@ -25,8 +25,9 @@
 <div class="row">
     <div class="list-group" >
     <li class="list-group-item list-group-item-action" id="news-source" data-bs-toggle="list" href="#list-home">News Sources</li>
+    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="/">All News</a>
         {% for source in sources %}
-      <a class="list-group-item list-group-item-action"  data-bs-toggle="list" href="" role="tab" aria-controls="list-home">{{source.name}}</a>
+      <a class="list-group-item list-group-item-action"  data-bs-toggle="list" href='/news/{{source.id}}' role="tab" aria-controls="list-home">{{source.name}}</a>
         {%endfor%}
 
     </div>
