@@ -2,30 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  {% if title %}
-    <title>{{title}}</title>
-  {% else %}
     <title>Welcome to the best news website</title>
-  {% endif %}
 
-     <style>
-  .card-body{
-
-      width: 600px;
-      height: 400px;
-      margin: 10px;
-      border-radius: 7px;
-      box-shadow: 0px 0px 5px grey;
-      background-size: cover;
-  }
-</style>
-
-
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
 
-<div class="card" >
+<div class="nav">
+       <h2 className="logo">News-Brief</h2>
+
+<ul className="links">
+    <li className="link">Business</li>
+   <li className="link" >Technology</li>
+    <li className="link" to='/login'>Politics</li>
+</ul>
+
+</div>
+
+
+<div class="cards">
     {% block content %}
      {% for new in news %}
   <div class="card-body" style="background-image: url({{new.urlToImage}})">
@@ -35,7 +31,7 @@
   </div>
      {% endfor %}
      {% endblock %}
-</div>
 
+ </div>
 </body>
 </html>
