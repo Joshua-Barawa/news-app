@@ -13,7 +13,7 @@ def get_news_sources():
     response = json.loads(request.content)
     news_sources = []
     for source in response['sources']:
-        source = News_Source(source['name'])
+        source = News_Source(source['id'], source['name'])
         news_sources.append(source)
 
     return news_sources
