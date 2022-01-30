@@ -13,9 +13,9 @@
     <h2 class="logo">News-Brief</h2>
 
 <ul class="links">
-    <li class="link"><a href="">Business</a></li>
-   <li class="link"><a href="">Technology</a></li>
-    <li class="link"><a href="">Politics</a></li>
+    <li class="link"><a href='/news/{{source.source_id}}'>Business</a></li>
+   <li class="link"><a href='/news/{{source.source_id}}'>Technology</a></li>
+    <li class="link"><a href='/news/{{source.source_id}}'>Politics</a></li>
 </ul>
 
 </div>
@@ -24,10 +24,10 @@
 {%block content%}
 <div class="row">
     <div class="list-group" >
-    <li class="list-group-item list-group-item-action" id="news-source" data-bs-toggle="list" href="#list-home">News Sources</li>
+    <li class="list-group-item list-group-item-action" id="news-source" data-bs-toggle="list">News Sources</li>
     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="/">All News</a>
         {% for source in sources %}
-      <a class="list-group-item list-group-item-action"  data-bs-toggle="list" href='/news/{{source.id}}' role="tab" aria-controls="list-home">{{source.name}}</a>
+      <a class="list-group-item list-group-item-action"  data-bs-toggle="list" href='/news/{{source.source_id}}' role="tab" aria-controls="list-home">{{source.name}}</a>
         {%endfor%}
 
     </div>
