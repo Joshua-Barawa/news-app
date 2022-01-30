@@ -7,18 +7,6 @@ News_Article = news_article.Article
 News_Source = news_source.Source
 
 
-def get_news_sources():
-    request = requests.get('https://newsapi.org/v2/top-headlines/sources?apiKey={}'
-                           .format(MOVIE_API_KEY))
-    response = json.loads(request.content)
-    news_sources = []
-    for source in response['sources']:
-        source = News_Source(source['id'], source['name'])
-        news_sources.append(source)
-
-    return news_sources
-
-
 def get_news():
     request = requests.get('https://newsapi.org/v2/everything?q=all&apiKey={}'
                            .format(MOVIE_API_KEY))
@@ -30,6 +18,18 @@ def get_news():
         news.append(new)
 
     return news
+
+
+def get_news_sources():
+    request = requests.get('https://newsapi.org/v2/top-headlines/sources?apiKey={}'
+                           .format(MOVIE_API_KEY))
+    response = json.loads(request.content)
+    news_sources = []
+    for source in response['sources']:
+        source = News_Source(source['id'], source['name'])
+        news_sources.append(source)
+
+    return news_sources
 
 
 def get_news_from_source(source):
