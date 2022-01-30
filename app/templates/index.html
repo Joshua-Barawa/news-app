@@ -9,10 +9,10 @@
   {% endif %}
 
      <style>
-  #news {
-    float: left;
-      width: 400px;
-      height: 250px;
+  .card-body{
+
+      width: 600px;
+      height: 400px;
       margin: 10px;
       border-radius: 7px;
       box-shadow: 0px 0px 5px grey;
@@ -25,15 +25,17 @@
 </head>
 <body>
 
- <div>
+<div class="card" >
     {% block content %}
-        {% for new in news %}
-        <div id="news" style="background-image: url({{new.urlToImage}})">
-<p>{{new.title}}</p>
-        </div>
-        {% endfor %}
-    {% endblock %}
-    </div>
+     {% for new in news %}
+  <div class="card-body" style="background-image: url({{new.urlToImage}})">
+    <h5 class="card-title">{{new.title}}</h5>
+    <p class="card-text">{{new.description}}</p>
+    <a href={{new.url}} class="btn btn-primary">Read More</a>
+  </div>
+     {% endfor %}
+     {% endblock %}
+</div>
 
 </body>
 </html>
