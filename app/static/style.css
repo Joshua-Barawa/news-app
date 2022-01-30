@@ -67,6 +67,9 @@ background-color:#e3256b;
 color:#fff;
 font-weight: bold;
 }
+.published{
+font-style:italic;
+}
 
  .list-group{
 margin:10px;
