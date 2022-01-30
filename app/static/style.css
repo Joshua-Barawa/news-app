@@ -3,38 +3,33 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
-overflow-x:hidden;
 background-color:#0e387a;
 position:sticky;
 top:0;
-height: 80px;
 text-align:center;
-
+height:80px;
 }
 
-.logo{
-    margin-left: 10px;
-    font-size:35px;
-    text-decoration: none;
-    font-weight:bold;
-    text-align:center;
-    padding: 0px 30px;
-    color:#fff;
+.nav .logo{
+color:#fff;
+padding: 0px 5%;
 }
 
-.links{
-    display: inline-flex;
-    padding: 0px 30px;
+.nav .links{
+display: inline-flex;
+color:white;
+padding: 0px 5%;
 }
-.links li{
-   list-style-type:none;
+
+.links a{
+color:#fff;
  }
 
 .links .link{
    margin-right: 30px;
    text-decoration: none;
    font-size: 21px;
-   color:#fff;
+   list-style-type:none;
 }
 
 
