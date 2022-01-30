@@ -30,7 +30,9 @@ color:#fff;
    font-size: 21px;
    list-style-type:none;
 }
-
+#heading{
+text-align: center;
+}
 .hero{
 display: flex;
 padding:0px 5%;
