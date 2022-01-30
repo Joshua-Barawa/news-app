@@ -35,7 +35,6 @@ color:#fff;
 .hero{
 display: flex;
 padding:0px 5%;
-background-color:red;
 }
 
 .cards{
@@ -44,7 +43,6 @@ background-color:red;
     grid-gap: 10px;
     margin:10px;
     flex:0.9;
-
 }
 
 .card-body{
@@ -56,21 +54,18 @@ background-color:red;
   }
 
  .card-title{
- color:#fff;
  font-weight:bold;
- }
-
- .card-text{
- color:#fff;
  }
 
 
  .row{
  position:sticky;
- top:10px;
+ top:8%;
+ height:200px;
+ margin-right:10px;
  }
 
  .list-group{
- width:250px;
+ width:300px;
  margin:10px;
  }

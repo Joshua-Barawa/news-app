@@ -21,32 +21,32 @@
 </div>
 
 <div class="hero">
-
+{%block content%}
 <div class="row">
     <div class="list-group" >
     <li class="list-group-item list-group-item-action" id="news-source" data-bs-toggle="list" href="#list-home">News Sources</li>
-      <a class="list-group-item list-group-item-action"  data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
-      <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-      <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-      <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+
+        {% for source in sources %}
+      <a class="list-group-item list-group-item-action"  data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">{{source.name}}</a>
+        {%endfor%}
+
     </div>
 </div>
 
 
 <div class="cards">
-    {% block content %}
      {% for new in news %}
-  <div class="card-body" style="background-image: url({{new.urlToImage}});">
+    <img src={{new.urlToImage}} class="card-img-top" alt="...">
+  <div class="card-body" >
     <h5 class="card-title">{{new.title}}</h5>
     <p class="card-text">{{new.description}}</p>
     <a href={{new.url}} class="btn btn-primary">Read More</a>
   </div>
      {% endfor %}
-     {% endblock %}
 
  </div>
 
-
+ {%endblock%}
 </div>
 </body>
 </html>
