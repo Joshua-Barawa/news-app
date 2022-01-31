@@ -65,7 +65,6 @@ simplejson==3.16.0
 six==1.14.0
 soupsieve==1.9.5
 systemd-python==234
-ubuntu-drivers-common==0.0.0
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.25.8
