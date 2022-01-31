@@ -13,6 +13,9 @@
 
 ## Description
 This is a news web app for reading news from different sources and topics
+## Visuals
+![Screenshot from 2022-01-31 15-49-41](https://user-images.githubusercontent.com/91249358/151797838-648f4030-7643-4601-8ae5-d613af5006dc.png)
+
 ## Contributors
 * Joshua Barawa
 ## Setup/Installation Requirements
