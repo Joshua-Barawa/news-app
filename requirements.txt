@@ -66,7 +66,6 @@ six==1.14.0
 soupsieve==1.9.5
 systemd-python==234
 urllib3==1.25.8
-usb-creator==0.3.7
 virtualenv==20.0.17
 virtualenv-clone==0.3.0
 visitor==0.1.3
