@@ -1,10 +1,15 @@
-from app.configuration.config import API_KEY
+from config import Config
 import requests, json
 from app.models import news_article, news_source
 
-MOVIE_API_KEY = API_KEY
+MOVIE_API_KEY = Config.API_KEY
 News_Article = news_article.Article
 News_Source = news_source.Source
+
+
+def configure_request(app):
+    global api_key
+    api_key = app.config['API_KEY']
 
 
 def get_news():
