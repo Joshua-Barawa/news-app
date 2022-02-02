@@ -21,7 +21,7 @@ This is a news web app for reading news from different sources and topics
 ## Setup/Installation Requirements
 * Clone or download the project from my repo https://github.com/Joshua-Barawa/news-app
 * Open with pycharm or your prefered IDE
-* Or you can You can view it using my git hub pages https://joshua-barawa.github.io/GitFinder/
+* Or you can You can view it using this link https://news-today-api.herokuapp.com/
 
 ## Technologies Used
 * Flask
